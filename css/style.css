@@ -11,6 +11,9 @@
 
 
 header{
+  display: flex;
+  position: inline-flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   padding: 10px 0px;
   font-size: 30px;
@@ -19,10 +22,41 @@ header{
   width: 100%;
 }
 
+header ul{
+  display: inline-flex;
+  align-self: center;
+}
+
+header li{
+  list-style-type: none;
+  padding: 0 5px 5px 5px;
+  margin-left: 20px;
+  border-radius: 9px;
+  transition: all .5s ease-in-out;
+}
+
+header li:hover{
+  transform: scale(1.1);
+  background-color: rgba(122, 146, 172, 0.877);
+}
+
+header li a{
+  text-decoration: none;
+  color: rgb(53, 48, 48);
+  font-size: 20px;
+}
+
+header h1{
+  display: inline-flex;
+  gap: 5px;
+  align-self: center;
+}
+
 body {
   background-image: url(../img/ribdosul.png);
   background-size: cover;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .background-texto {
@@ -57,4 +91,75 @@ ul {
 #footer {
   font-family: 'Poppins', sans-serif;
   padding: 0px;
+  margin-top: 20px;
 }
+
+h2{
+  color: rgb(53, 48, 48);
+}
+
+main fieldset{
+  background-color: rgba(122, 146, 172, 0.767);
+  margin-top: 15px;
+}
+
+fieldset legend{
+  font-weight: bold;
+}
+
+.container{
+  padding: 0px 35%;
+}
+
+label, option, select{
+  display: block;
+  margin: 10px 10px 0px 10px;
+}
+
+input{
+  transition: all .5s ease-in-out;
+}
+
+input[type="text"]:hover{
+  transform: scale(1.1);
+}
+
+input[type="email"]:hover{
+  transform: scale(1.1);
+}
+
+input[type="tel"]:hover{
+  transform: scale(1.1);
+}
+
+input[type="date"]:hover{
+  transform: scale(1.1);
+}
+
+select{
+  margin: 10px auto 5px;
+  transition: all .5s ease-in-out;
+}
+
+select:hover{
+  transform: scale(1.1);
+}
+
+.idades label{
+  display: inline-block;
+  margin: 15px 10px 10px 10px;
+}
+
+.interesses label{
+  display: inline-block;
+  margin: 10px;
+}
+
+button{
+  margin-top: 10px;
+  padding: 8px;
+}
+
+
+
+
