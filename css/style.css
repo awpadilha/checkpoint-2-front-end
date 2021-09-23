@@ -36,7 +36,7 @@ header li{
 
 header li:hover{
   transform: scale(1.1);
-  background-color: rgba(122, 146, 172, 0.877);
+  background-color: gainsboro;
 }
 
 header li a{
@@ -90,10 +90,30 @@ ul {
   
 }
 
+.flex-footer{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.flex-social{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
 #footer {
+  justify-content: center;
   font-family: 'Poppins', sans-serif;
-  padding: 0px;
+  font-size: 12px;
+  color: white;
   margin-top: 20px;
+}
+
+#facebook, #instagram{
+  width: 40px;
 }
 
 h2{
